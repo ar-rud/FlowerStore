@@ -14,7 +14,7 @@ public class Flower {
     private int price;
     private FlowerType type;
 
-    public Flower(Flower flower){
+    public Flower(Flower flower) {
         color = flower.color;
         sepalLength = flower.sepalLength;
         price = flower.price;

@@ -19,11 +19,11 @@ public class FlowerStoreTest {
     private final Flower flower2 = new Flower(80, FlowerColor.YELLOW, 60, FlowerType.TULIP);
     private final FlowerPack flowerPack2 = new FlowerPack(flower2, 5);
     @BeforeEach
-    public void init(){
+    public void init() {
         flowerStore = new Store();
     }
     @Test
-    public void testStore(){
+    public void testStore() {
         FlowerBucket bucket = new FlowerBucket();
         bucket.add(flowerPack);
         bucket.add(flowerPack2);

@@ -10,11 +10,11 @@ public class FlowerBucket {
         this.bucket = new ArrayList<>();
     }
 
-    public void  add(FlowerPack flowerPack){
+    public void  add(FlowerPack flowerPack) {
         bucket.add(flowerPack);
     }
 
-    public int getPrice(){
+    public int getPrice() {
         int res = 0;
         for (FlowerPack flowerPack : bucket) {
             res += flowerPack.getPrice();
