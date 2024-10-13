@@ -1,7 +1,8 @@
 package org.example.flowers;
 
 public enum FlowerColor {
-    RED("#FF0000"), BLUE("#0000FF"), GREEN("#00FF00"), YELLOW("#FFFF00"), WHITE("#FFFFFF");
+    RED("#FF0000"), BLUE("#0000FF"), GREEN("#00FF00"),
+    YELLOW("#FFFF00"), WHITE("#FFFFFF");
 
     private String rgb;
 
@@ -9,7 +10,7 @@ public enum FlowerColor {
         this.rgb = rgb;
     }
 
-    public String toString(){
+    public String toString() {
         return this.rgb;
     }
 }
