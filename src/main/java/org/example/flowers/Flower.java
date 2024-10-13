@@ -1,6 +1,11 @@
 package org.example.flowers;
 
-import lombok.*;
+
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+import lombok.AllArgsConstructor;
 
 @Getter @Setter @ToString @NoArgsConstructor @AllArgsConstructor
 public class Flower {
