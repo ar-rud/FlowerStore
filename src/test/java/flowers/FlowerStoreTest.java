@@ -1,7 +1,7 @@
 package flowers;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Assertions;
 import java.util.List;
 import java.util.ArrayList;
 
@@ -37,8 +37,8 @@ public class FlowerStoreTest {
 
         List<FlowerBucket> match = flowerStore.search(bucket2);
         FlowerBucket flowerSearched = match.get(0);
-        assertEquals(bucket2, flowerSearched);
+        Assertions.assertEquals(bucket2, flowerSearched);
         match = flowerStore.search(flowerBucket3);
-        assertEquals(match, new ArrayList<FlowerBucket>());
+        Assertions.assertEquals(match, new ArrayList<FlowerBucket>());
     }
 }
