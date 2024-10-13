@@ -32,7 +32,8 @@ public class FlowerStoreTest {
         bucket.add(secondFlowerPack);
         FlowerBucket secondBucket = new FlowerBucket();
         secondBucket.add(secondFlowerPack);
-        FlowerPack thirdFlowerPack = new FlowerPack(secondFlower, FLOWER_QUANTITY);
+        FlowerPack thirdFlowerPack = new FlowerPack(secondFlower,
+                FLOWER_QUANTITY);
         FlowerBucket thirdFlowerBucket = new FlowerBucket();
         thirdFlowerBucket.add(thirdFlowerPack);
         flowerStore.add(bucket);
