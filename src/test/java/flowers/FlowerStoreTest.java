@@ -13,6 +13,7 @@ import org.example.flowers.FlowerType;
 import org.example.flowers.Store;
 
 public class FlowerStoreTest {
+    private static final int FLOWER_QUANTITY = 6;
     private Store flowerStore;
     private final Flower flower = new Flower(80, FlowerColor.RED, 50, FlowerType.ROSE);
     private final FlowerPack flowerPack = new FlowerPack(flower, 5);
@@ -29,7 +30,7 @@ public class FlowerStoreTest {
         bucket.add(flowerPack2);
         FlowerBucket bucket2 = new FlowerBucket();
         bucket2.add(flowerPack2);
-        FlowerPack flowerPack3 = new FlowerPack(secondFlower, 6);
+        FlowerPack flowerPack3 = new FlowerPack(secondFlower, FLOWER_QUANTITY);
         FlowerBucket flowerBucket3 = new FlowerBucket();
         flowerBucket3.add(flowerPack3);
         flowerStore.add(bucket);
